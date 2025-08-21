@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "description": "Smooth and ergonomic wireless mouse with fast response.",
+    "price": 25,
+    "image": "/products/mouse.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mechanical Keyboard",
+    "description": "RGB backlit keyboard with tactile switches.",
+    "price": 80,
+    "image": "/products/keyboard.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Noise Cancelling Headphones",
+    "description": "Experience immersive sound with noise cancellation.",
+    "price": 120,
+    "image": "/products/headphones.jpg"
+  }
+  
+]

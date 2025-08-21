@@ -1,16 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { data: session } = useSession();
+  const [scrolled, setScrolled] = useState(false);
+  // Scroll effect for top navbar background
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md  border-b bg-base border-white/20 dark:border-gray-700/20 shadow-md transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className={`fixed top-0 w-full z-50 ${
+        scrolled
+          ? "bg-[#0f172a]/60 shadow-md border-b border-cyan-500/10 backdrop-blur-lg"
+          : "bg-transparent"
+      } transition-all duration-300`}>
+      <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-16 py-5 ">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-stone-50">
@@ -46,13 +59,14 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden text-white z-50">
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 dark:text-gray-200 focus:outline-none text-2xl"
-            >
-              ☰
-            </button>
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle Menu"
+            className="transition-transform duration-300"
+          >
+            {isOpen ? '⛌' : '☷'}
+          </button>
           </div>
         </div>
       </div>
