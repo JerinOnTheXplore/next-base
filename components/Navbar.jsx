@@ -9,11 +9,11 @@ export default function Navbar() {
   const { data: session } = useSession();
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50">
+    <nav className="sticky top-0 z-50 backdrop-blur-md  border-b bg-base border-white/20 dark:border-gray-700/20 shadow-md transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-blue-600">
+          <Link href="/" className="text-2xl font-bold text-stone-50">
             NextBase
           </Link>
 
@@ -39,7 +39,7 @@ export default function Navbar() {
                 onClick={() => signIn("google", { callbackUrl: "/products" })}
                 className="flex items-center gap-2 bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600 transition"
               >
-                <img src="C:\Projects\next-base\public\7123025_logo_google_g_icon.png" alt="Google" className="w-5 h-5" />
+                <img src="/google-icon.svg" alt="Google" className="w-5 h-5" />
                 Login with Google
               </button>
             )}
@@ -59,7 +59,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-3 space-y-2 bg-gray-100 dark:bg-gray-800">
+        <div className="md:hidden px-4 pb-3 space-y-2 backdrop-blur-md bg-white/30 dark:bg-gray-900/30 border-t border-white/20 dark:border-gray-700/20 transition-colors">
           <Link href="/" className="block hover:text-blue-500 transition">Home</Link>
           <Link href="/products" className="block hover:text-blue-500 transition">Products</Link>
 
