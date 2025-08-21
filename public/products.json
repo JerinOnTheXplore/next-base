@@ -2,36 +2,80 @@
   {
     "id": 1,
     "name": "Wireless Mouse",
+    "brand": "Logitech",
+    "category": "Accessories",
     "description": "Smooth and ergonomic wireless mouse with fast response.",
+    "features": ["2.4 GHz wireless", "Ergonomic design", "Long battery life"],
     "price": 25,
-    "image": "/products/mouse.jpg"
+    "rating": 4.5,
+    "stock": 120,
+    "image": "/products/mouse.jpg",
+    "reviews": [
+      { "user": "Alice", "comment": "Very comfortable!", "rating": 5 },
+      { "user": "Bob", "comment": "Battery lasts long", "rating": 4 }
+    ]
   },
   {
     "id": 2,
     "name": "Mechanical Keyboard",
+    "brand": "Corsair",
+    "category": "Accessories",
     "description": "RGB backlit keyboard with tactile switches.",
+    "features": ["RGB lighting", "Cherry MX switches", "Detachable wrist rest"],
     "price": 80,
-    "image": "/products/keyboard.jpg"
+    "rating": 4.7,
+    "stock": 60,
+    "image": "/products/keyboard.jpg",
+    "reviews": [
+      { "user": "Charlie", "comment": "Love the clicky feel", "rating": 5 },
+      { "user": "Dana", "comment": "Great for gaming", "rating": 4 }
+    ]
   },
   {
     "id": 3,
     "name": "Noise Cancelling Headphones",
+    "brand": "Sony",
+    "category": "Audio",
     "description": "Experience immersive sound with noise cancellation.",
+    "features": ["Active noise cancelling", "Bluetooth 5.0", "30h battery life"],
     "price": 120,
-    "image": "/products/headphones.jpg"
+    "rating": 4.6,
+    "stock": 40,
+    "image": "/products/headphones.jpg",
+    "reviews": [
+      { "user": "Eve", "comment": "Sound is amazing!", "rating": 5 },
+      { "user": "Frank", "comment": "Comfortable to wear", "rating": 4 }
+    ]
   },
   {
     "id": 4,
     "name": "Portable SSD",
+    "brand": "Samsung",
+    "category": "Storage",
     "description": "Fast and compact SSD with 1TB storage capacity.",
+    "features": ["1TB capacity", "USB-C", "Compact design"],
     "price": 150,
-    "image": "/products/ssd.jpg"
+    "rating": 4.8,
+    "stock": 25,
+    "image": "/products/ssd.jpg",
+    "reviews": [
+      { "user": "Grace", "comment": "Super fast and small", "rating": 5 }
+    ]
   },
   {
     "id": 5,
     "name": "Smartwatch",
+    "brand": "Apple",
+    "category": "Wearable",
     "description": "Track your health and notifications with a stylish smartwatch.",
+    "features": ["Heart rate monitor", "GPS", "Water resistant"],
     "price": 200,
-    "image": "/products/smartwatch.jpg"
+    "rating": 4.9,
+    "stock": 30,
+    "image": "/products/smartwatch.jpg",
+    "reviews": [
+      { "user": "Hannah", "comment": "Keeps me fit", "rating": 5 },
+      { "user": "Ian", "comment": "Very convenient", "rating": 4 }
+    ]
   }
 ]

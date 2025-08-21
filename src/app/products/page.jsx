@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import Tilt from "react-parallax-tilt";
 
@@ -38,9 +39,11 @@ export default function ProductsPage() {
               <h2 className="text-xl font-semibold text-white">{product.name}</h2>
               <p className="text-gray-200 text-sm my-2">{product.description}</p>
               <p className="text-cyan-300 font-bold mb-4">${product.price}</p>
-              <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg shadow-md transition">
-                View Details
-              </button>
+              <Link href={`/products/${product.id}`}>
+  <button className="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-lg shadow-md shadow-cyan-400/50 transition-all hover:scale-105">
+    View Details
+  </button>
+</Link>
             </div>
           </Tilt>
         ))}
