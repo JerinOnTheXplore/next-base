@@ -1,3 +1,45 @@
+# NextBase Tech Inventory
+
+A modern tech product inventory web application built with **Next.js**, **Tailwind CSS**, and **NextAuth** for authentication.  
+Users can browse products, log in with Google, and (if authenticated) add new products to the inventory.
+
+---
+
+## Features
+
+- Responsive UI with TailwindCSS
+- Google OAuth login via NextAuth
+- Add new products with dynamic form handling
+- Dashboard modal for logged-in users
+- Glassy cyan-glow styling for modals and footer
+- Client-side state management using React Context API
+
+---
+
+## Tech Stack
+
+- **Frontend:** Next.js (App Router), React  
+- **Styling:** Tailwind CSS  
+- **Authentication:** NextAuth (Google OAuth)  
+- **State Management:** React Context API  
+- **Hosting:** Vercel  
+
+---
+
+## Setup & Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/your-username/nextbase.git
+cd nextbase
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
