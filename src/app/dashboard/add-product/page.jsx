@@ -26,11 +26,11 @@ const AddProduct = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-cyan-900 via-cyan-800 to-cyan-900 py-24 px-6">
-      <div className="text-center mb-10 space-y-3 mt-24 px-12">
+      <div className="text-center mb-10 space-y-3 mt-24 px-12 bg-cyan-700">
         <h1 className="text-4xl md:text-5xl font-bold text-stone-50">
           Add a New Product
         </h1>
-        <p className="text-gray-600 max-w-2xl text-xl md:text-2xl mx-auto">
+        <p className="text-white max-w-2xl text-xl md:text-2xl mx-auto">
           Enter product details and add them to your tech inventory.
         </p>
       </div>
