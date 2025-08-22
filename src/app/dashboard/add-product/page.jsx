@@ -26,7 +26,7 @@ const AddProduct = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-cyan-900 via-cyan-800 to-cyan-900 py-24 px-6">
-      <div className="text-center mb-10 space-y-3 mt-24 px-12 bg-cyan-700">
+      <div className="text-center mb-10 space-y-3 mt-24 px-12">
         <h1 className="text-4xl md:text-5xl font-bold text-stone-50">
           Add a New Product
         </h1>
@@ -37,7 +37,7 @@ const AddProduct = () => {
 
       <form
         onSubmit={handleAddProduct}
-        className="bg-white/70 rounded-xl shadow-xl p-6 md:p-10 space-y-6 max-w-4xl mx-auto"
+        className="bg-cyan-600 rounded-xl shadow-xl p-6 md:p-10 space-y-6 max-w-4xl mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Product Name */}
