@@ -48,7 +48,7 @@ export default function Navbar() {
               </>
             ) : (
               <button
-                onClick={() => signIn("google", { callbackUrl: "/products" })}
+                onClick={() => signIn()}
                 className="flex items-center gap-2 bg-cyan-700 text-white px-3 py-1 rounded-md hover:bg-blue-600 transition"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 64 64">
