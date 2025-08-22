@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bottom-0 w-full z-50 bg-gradient-to-r from-cyan-900 via-cyan-800 to-cyan-900 pt-24">
+    <footer className="bottom-0 max-w-6xl z-50 bg-gradient-to-r from-cyan-900 via-cyan-800 to-cyan-900 pt-24">
       <div className=" py-12 glass-card  backdrop-blur-xl border-t border-cyan-400 shadow-lg shadow-cyan-500/50 flex flex-col md:flex-row items-center justify-between  px-6 text-white">
         {/* Left */}
         <div className="mb-2 md:mb-0">
