@@ -37,7 +37,7 @@ const AddProduct = () => {
 
       <form
         onSubmit={handleAddProduct}
-        className="bg-cyan-600 rounded-xl shadow-xl p-6 md:p-10 space-y-6 max-w-4xl mx-auto"
+        className="bg-cyan-800 rounded-xl shadow-xl p-6 md:p-10 space-y-6 max-w-4xl mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Product Name */}
